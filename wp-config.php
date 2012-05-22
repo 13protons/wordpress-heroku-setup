@@ -17,21 +17,21 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
  if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
-  define('DB_NAME', 'db_name');          // The name of the database
-  define('DB_USER', 'db_user');            // Your MySQL username
-  define('DB_PASSWORD', 'db_password'); // ...and password
+  define('DB_NAME', 'byp_wp');          // The name of the database
+  define('DB_USER', 'byp');            // Your MySQL username
+  define('DB_PASSWORD', 'byp123'); // ...and password
   define('DB_HOST', '127.0.0.1');       // 99% chance you won't need to change this value
   
-  define('WP_HOME','http://localhost/');  // Local Development URL
-  define('WP_SITEURL','http://localhost/'); // Local Development URL
+  define('WP_HOME','http://localhost/~sleepyxivo/benyoung');  // Local Development URL
+  define('WP_SITEURL','http://localhost/~sleepyxivo/benyoung'); // Local Development URL
 } else {
-  define('DB_NAME', 'heroku_db');             
-  define('DB_USER', 'heroku_db_user');       
-  define('DB_PASSWORD', 'heroku_db_password'); 
-  define('DB_HOST', 'heroku_db_host'); 
+  define('DB_NAME', 'heroku_2211d9542ba9242');             
+  define('DB_USER', '7fd7c90514a58a');       
+  define('DB_PASSWORD', '9dd62f64'); 
+  define('DB_HOST', 'us-cdbr-east.cleardb.com'); 
   
-  define('WP_HOME','http://nameofapp.herokuapp.com');  // Can Be Domain Name
-  define('WP_SITEURL','http://nameofapp.herokuapp.com'); // Can Be Domain Name
+  define('WP_HOME','http://benyoung.herokuapp.com');  // Can Be Domain Name
+  define('WP_SITEURL','http://benyoung.herokuapp.com'); // Can Be Domain Name
 }
 
 /**#@+
