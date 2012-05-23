@@ -34,116 +34,73 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 </h2>
 
 <div class="changelog">
-	<h3><?php echo ( 'Customizer' ); ?></h3>
+	<h3><?php _e( 'Live Theme Previews' ); ?></h3>
 
 	<div class="feature-section images-stagger-right">
-		<div class="feature-images">
-			<img src="<?php echo admin_url( 'images/screenshots/media-icon.png' ); ?>" width="200" class="angled-right" />
-			<img src="<?php echo admin_url( 'images/screenshots/drag-and-drop.png' ); ?>" width="200" class="angled-left" />
-		</div>
-		<div class="left-feature">
-			<h4><?php echo ( 'All In One Place' ); ?></h4>
-			<p><?php echo ( 'OMG, this one thing does multiple things, on one screen.' ); ?></p>
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/theme-customizer.png' ) ); ?>" class="image-50" />
+		<h4><?php _e( 'Try on New Themes' ); ?></h4>
+		<p><?php _e( 'Gone are the days of rushing to update your header, background, and the like as soon as you activate a new theme. You can now customize these options <strong>before</strong> activating a new theme. Note: this feature is available for installed themes only.' ); ?></p>
 
-			<h4><?php echo ( 'Live Preview' ); ?></h4>
-			<p><?php echo ( 'Immediate feedback on what your butchery looks like.' ); ?></p>
-
-			<h4><?php echo ( 'Commitment Issues?' ); ?></h4>
-			<p><?php echo ( 'Before activating that new theme, customize and test drive it.' ); ?></p>
-
-			<h4><?php echo ( 'Variable Height Headers' ); ?></h4>
-			<p><?php echo ( 'If your theme elects, image headers can be made at variable height and even width. Pick the size that suits you.' ); ?></p>
-		</div>
+		<h4><?php _e( 'Customize Current Theme' ); ?></h4>
+		<p><?php _e( 'Satisfy your curiosity and try on a fresh coat of paint &mdash; you can also use the live preview mode to customize your current theme. Look for the Customize link on the Themes screen.' ); ?></p>
 	</div>
 </div>
 
 <div class="changelog">
-	<h3><?php echo ( 'Mobile/Touch' ); ?></h3>
-
-	<div class="feature-section text-features">
-		<h4><?php echo ( 'Drag, Swipe, Tap, Pat, Pat, Pat Happy Little Clouds' ); ?></h4>
-		<p><?php echo ( 'Engage your fingers with a more touchable admin.' ); ?></p>
-
-		<div>
-		<h4><?php echo ( 'Size Responsive' ); ?></h4>
-		<p><?php echo ( 'From mobile to tablet.' ); ?></p>
-		</div>
+	<h3><?php _e( 'Custom Headers' ); ?></h3>
+	
+	<div class="feature-section">
+		<h4><?php _e( 'Flexible Sizes' ); ?></h4>
+		<p><?php _e( 'You can decide for yourself how tall or wide your custom header image should be. From now on, themes will provide a recommended image size for custom headers rather than a fixed requirement. Note: this feature requires <a href="http://codex.wordpress.org/Custom_Headers">theme support</a>.' ); ?></p>
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/flex-header-1.png' ) ); ?>" class="image-30" />
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/flex-header-2.png' ) ); ?>" class="image-30" />
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/flex-header-3.png' ) ); ?>" class="image-30" />
 	</div>
 
-	<div class="feature-section screenshot-features">
-		<div class="angled-left">
-			<img src="<?php echo admin_url( 'images/screenshots/admin-flyouts.png' ); ?>" />
-			<h4><?php echo ( 'Blog Anywhere' ); ?></h4>
-			<p><?php echo ( 'Picture of hipster in cafe criticizing the coffee via his tablet.' ); ?></p>
-		</div>
-		<div class="angled-right">
-			<img src="<?php echo admin_url( 'images/screenshots/help-screen.png' ); ?>" />
-			<h4><?php echo ( 'Couch Couch Couch!' ); ?></h4>
-			<p><?php echo ( 'Picture of happy tablet user blogging from couch while watching sitcoms.' ); ?></p>
-		</div>
+	<div class="feature-section images-stagger-right">
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/flex-header-media-library.png' ) ); ?>" class="image-50" />
+		<h4><?php _e( 'Choose from Media Library' ); ?></h4>
+		<p><?php _e( 'Tired of re-uploading the same custom header image every time you check out a new theme? Now you can choose header images from your media library for easier customization.' ); ?></p>
 	</div>
 </div>
 
 <div class="changelog">
-	<h3><?php echo ( 'XML-RPC API' ); ?></h3>
+	<h3><?php _e( 'Better Captions' ); ?></h3>
 
-	<div class="feature-section text-features">
-		<h4><?php echo ( 'In your About page, talking nonsense.' ); ?></h4>
-		<p><?php echo ( 'Synergy!' ); ?></p>
-
-		<div>
-		<h4><?php echo ( 'Remote Procedures' ); ?></h4>
-		<p><?php echo ( 'Want you to call. Do not pretend you lost the number.' ); ?></p>
-		</div>
-	</div>
-
-	<div class="feature-section screenshot-features">
-		<div class="angled-left">
-			<img src="<?php echo admin_url( 'images/screenshots/admin-flyouts.png' ); ?>" />
-			<h4><?php echo ( 'Mobile Mobile Mobile!' ); ?></h4>
-			<p><?php echo ( 'Picture of a happy mobile app user (like the one above) who has no idea that his/her phone is engaging in XML-RPC.' ); ?></p>
-		</div>
-		<div class="angled-right">
-			<img src="<?php echo admin_url( 'images/screenshots/help-screen.png' ); ?>" />
-			<h4><?php echo ( 'Armageddon It' ); ?></h4>
-			<p><?php echo ( 'Picture of a block of XML-RPC API code glimpsed over of the shoulder of a henchman in a lab coat who is getting ready to upload this doomsday snippet to every satellite over the Tri-State Area!' ); ?></p>
-		</div>
+	<div class="feature-section images-stagger-right">
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/captions-1.png' ) ); ?>" class="image-30" />
+		<img src="<?php echo esc_url( admin_url( 'images/screenshots/captions-2.png' ) ); ?>" class="image-30" />
+		<h4><?php _e( 'HTML Support' ); ?></h4>
+		<p><?php _e( 'Basic HTML support has been added to the caption field in the image uploader. This allows you to add links &mdash; great for photo credits or licensing details &mdash; and basic formatting such as bold and italicized text.' ); ?></p>
 	</div>
 </div>
 
 <div class="changelog">
-	<h3><?php echo ( 'Under the Hood' ); ?></h3>
+	<h3><?php _e( 'Under the Hood' ); ?></h3>
 
 	<div class="feature-section three-col">
 		<div>
-			<h4><?php echo ( 'Themes API' ); ?></h4>
-			<p><?php echo ( 'WP_Theme, wp_get_themes(), wp_get_theme(). Faster, uses less memory, make uses of persistent caching.' ); ?></p>
+			<h4><?php _e( 'Themes API' ); ?></h4>
+			<p><?php _e( 'WP_Theme, wp_get_themes(), wp_get_theme(). Faster, uses less memory, makes use of persistent caching.' ); ?></p>
+			
+			<h4><?php _e( 'Faster Main Query' ); ?></h4>
+			<p><?php _e( 'Post query optimized to avoid table scans.' ); ?></p>
 		</div>
 		<div>
-			<h4><?php echo ( 'Faster Main Query' ); ?></h4>
-			<p><?php echo ( 'Post query optimized to avoid table scans.' ); ?></p>
+			<h4><?php _e( 'Custom Header and Background API' ); ?></h4>
+			<p><?php  _e( 'Custom header and background API relocated into the theme support API.' ); ?></p>
+			
+			<h4><?php _e( 'Faster I18N' ); ?></h4>
+			<p><?php _e( 'The number of strings loaded on the front end was greatly reduced, resulting in faster front page load times for I18N users.' ); ?></p>
 		</div>
 		<div class="last-feature">
-			<h4><?php echo ( 'Custom Header and Backound API' ); ?></h4>
-			<p><?php  echo ( 'Custom header and background API relocated into the theme support API.' ); ?></p>
+			<h4><?php _e( 'WP_Screen API' ); ?></h4>
+			<p><?php _e( 'More methods, more convenience!' ); ?></p>
+			
+			<h4><?php _e( 'External Libraries' ); ?></h4>
+			<p><?php _e( 'jQuery, jQuery UI, TinyMCE, Plupload, PHPMailer, SimplePie, and other libraries were updated. jQuery UI Touch Punch was introduced.' ); ?></p>
 		</div>
 	</div>
-
-	<div class="feature-section three-col">
-		<div>
-			<h4><?php echo ( 'Faster I18N' ); ?></h4>
-			<p><?php echo ( 'The number of strings loaded on the front end were greatly reduced, resulting in faster front page load times for I18N users.' ); ?></p>
-		</div>
-		<div>
-			<h4><?php echo ( 'WP_Screen API' ); ?></h4>
-			<p><?php echo ( 'More methods, more convenience!' ); ?></p>
-		</div>
-		<div class="last-feature">
-			<h4><?php echo ( 'External Libraries' ); ?></h4>
-			<p><?php echo ( 'jQuery, jQuery UI, TinyMCE, Plupload, PHPMailer, SimplePie, and other libraries were updated. jQuery UI Touch Punch was introduced.' ); ?></p>
-		</div>
-	</div>
-
 </div>
 
 <div class="return-to-dashboard">
