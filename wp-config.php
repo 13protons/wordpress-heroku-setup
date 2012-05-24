@@ -17,9 +17,9 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
  if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
-  define('DB_NAME', 'byp_wp');          // The name of the database
-  define('DB_USER', 'byp');            // Your MySQL username
-  define('DB_PASSWORD', 'byp123'); // ...and password
+  define('DB_NAME', 'db_name');          // The name of the database
+  define('DB_USER', 'user_name');            // Your MySQL username
+  define('DB_PASSWORD', 'user_password'); // ...and password
   define('DB_HOST', '127.0.0.1');       // 99% chance you won't need to change this value
   define('WP_HOME','http://localhost/');  // Local Development URL
   define('WP_SITEURL','http://localhost/'); // Local Development URL
