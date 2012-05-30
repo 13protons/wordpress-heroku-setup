@@ -23,7 +23,7 @@
   define('DB_HOST', '127.0.0.1');       // 99% chance you won't need to change this value
   define('WP_HOME','http://localhost/');  // Local Development URL
   define('WP_SITEURL','http://localhost/'); // Local Development URL
-} else if ( $_SERVER['REMOTE_ADDR'] == 'appname.herokuapp.com') {
+} else if ( $_SERVER['SERVER_NAME'] == 'appname.herokuapp.com') {
   define('DB_NAME', 'heroku_db');             
   define('DB_USER', 'heroku_db_user');       
   define('DB_PASSWORD', 'heroku_db_password'); 
