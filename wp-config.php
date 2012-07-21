@@ -17,6 +17,7 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
  if ( $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ) {
+<<<<<<< HEAD
   define('DB_NAME', 'gcb_wp');          // The name of the database
   define('DB_USER', 'gcb');            // Your MySQL username
   define('DB_PASSWORD', 'gcb123'); // ...and password
@@ -32,6 +33,28 @@
   
   define('WP_HOME','http://gcustomsbrokerages.herokuapp.com');  // Can Be Domain Name
   define('WP_SITEURL','http://gcustomsbrokerages.herokuapp.com'); // Can Be Domain Name
+=======
+  define('DB_NAME', 'db_name');          // The name of the database
+  define('DB_USER', 'user_name');            // Your MySQL username
+  define('DB_PASSWORD', 'user_password'); // ...and password
+  define('DB_HOST', '127.0.0.1');       // 99% chance you won't need to change this value
+  define('WP_HOME','http://localhost/');  // Local Development URL
+  define('WP_SITEURL','http://localhost/'); // Local Development URL
+} else if ( $_SERVER['SERVER_NAME'] == 'appname.herokuapp.com') {
+  define('DB_NAME', 'heroku_db');             
+  define('DB_USER', 'heroku_db_user');       
+  define('DB_PASSWORD', 'heroku_db_password'); 
+  define('DB_HOST', 'heroku_db_host');               
+  define('WP_HOME','http://nameofapp.herokuapp.com');  // Can Be Domain Name
+  define('WP_SITEURL','http://nameofapp.herokuapp.com'); // Can Be Domain Name
+} else {
+  define('DB_NAME', 'domain_db');             
+  define('DB_USER', 'domain_db_user');       
+  define('DB_PASSWORD', 'domain_db_password'); 
+  define('DB_HOST', 'domain_db_host'); 
+  define('WP_HOME','http://domain.com');  // Can Be Domain Name
+  define('WP_SITEURL','http://domain.com'); // Can Be Domain Name
+>>>>>>> 5ecc0cc153fba6c2aa01e735405b73d27583f506
 }
 
 /**#@+
